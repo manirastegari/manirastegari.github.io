@@ -1012,3 +1012,34 @@ hr{
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
   } */
+
+  /* Default size for larger screens (bigger than 1045px) */
+#boxios,
+#boxandroid,
+#boxweb,
+#boxdesign {
+    width: 200px;
+    height: 200px;
+}
+
+/* For screens between 520px and 1045px */
+@media screen and (min-width: 520px) and (max-width: 1045px) {
+    #boxios,
+    #boxandroid,
+    #boxweb,
+    #boxdesign {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* For screens smaller than 520px */
+@media screen and (max-width: 520px) {
+    #boxios,
+    #boxandroid,
+    #boxweb,
+    #boxdesign {
+        width: 100px;
+        height: 100px;
+    }
+}
