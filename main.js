@@ -27,14 +27,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
   navLinks.forEach(link => {
       link.addEventListener('click', function(event) {
-          event.preventDefault();
-          console.log("Link Clicked:", this.getAttribute('href'));
-          const targetId = this.getAttribute('href').substring(1);
-          const targetSection = document.getElementById(targetId);
-          
-          if (targetSection) {
-              console.log("Smooth Scrolling to:", targetId);
-              smoothScroll(targetSection, 1000); // 1000 milliseconds (1 second)
+          const href = this.getAttribute('href');
+          if (href.startsWith('#')) {
+              event.preventDefault();
+              console.log("Link Clicked:", href);
+              const targetId = href.substring(1);
+              const targetSection = document.getElementById(targetId);
+              
+              if (targetSection) {
+                  console.log("Smooth Scrolling to:", targetId);
+                  smoothScroll(targetSection, 1000); // 1000 milliseconds (1 second)
+              }
           }
       });
   });
