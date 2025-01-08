@@ -24,7 +24,19 @@
 
 
 </head>
+<style>
+    .styled-link {
+    color: #555; /* A nice blue color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
 
+.styled-link:hover {
+    color: #2980b9; /* Darker blue on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+</style>
 <body>
     <header class="scroll">
         <nav class="nav">
@@ -62,7 +74,9 @@
 
             <i class="fa-solid fa-arrow-down fa-2xl" style="color: #ffffff;"></i>
             <h2 class="intro">My Online Advertising Platform</h2>
-            <h2 class="intro"><a href="https://SimplifyAd.com" target="_blank">https://SimplifyAd.com</a></h2>
+            <h2 class="intro">
+                <a href="https://SimplifyAd.com" target="_blank" class="styled-link">https://SimplifyAd.com</a>
+            </h2>
         </div>
     </main>
 
