@@ -197,8 +197,8 @@ button a {
 
 /* Projects Section */
 .projectstype {
-    background-color: #F4EDEA;
-    padding: 10px 0px 60px 10px;
+    background-color: #47B6B2;
+    padding: 10px 20px 60px 20px;
 }
 
 .projectstype1 {
@@ -208,10 +208,14 @@ button a {
 
 .projectstype h1 {
     font-size: 2.5em;
-    /* margin-bottom: 20px; */
     font-family: "DM Serif Display", serif;
     text-align: center;
-    color: #47B6B2;
+    color: #FD9185;
+    text-shadow: 
+        -1px -1px 0 #fff,  
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff; /* Creates a border-like shadow effect */
 }
 .projectstype1 h1 {
     font-size: 2.5em;
@@ -325,17 +329,18 @@ button a {
 
 .aboutmesection h2 {
     font-size: 1.3em;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .aboutmesection p{
-    text-align: center;
+    /* text-align: center; */
 }
 
 .aboutmesection .skillsimg {
     padding-top: 30px;
     display: block;
-    width: 800px;
+    max-width: 100%;
+    /* width: 800px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -411,7 +416,7 @@ button a {
 .education-item ul li {
     list-style-type: disc;
     margin-bottom: 5px;
-    text-align: center; /* Center the list items */
+    /* text-align: center; Center the list items */
 }
 
 
@@ -697,7 +702,7 @@ footer ul>li {
     .skillsimg {
         display: block;
         max-width: 100%;
-        width: 400px; /* Adjust the width as needed */
+        /* width: 400px; Adjust the width as needed */
         margin-left: auto;
         margin-right: auto;
     }
@@ -1042,4 +1047,51 @@ hr{
         width: 100px;
         height: 100px;
     }
+}
+
+
+
+
+.qr-section {
+    background-color: #FD9185; /* Matches the projects section background */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.qr-title {
+    font-size: 2.5em;
+    font-family: "DM Serif Display", serif;
+    color: #47B6B2; /* Matches the color used in headings */
+    /* margin-bottom: 20px; */
+    /* text-shadow: 0px 0px 4px rgba(255, 255, 255, 1.9); White shadow for better visibility */
+    text-shadow: 
+        -1px -1px 0 #fff,  
+         1px -1px 0 #fff,
+        -1px  1px 0 #fff,
+         1px  1px 0 #fff; 
+}
+
+.qr-codes {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.qr-code {
+    text-align: center;
+}
+
+.qr-code img {
+    width: 150px; /* Adjust size as needed */
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(93, 93, 93);
+}
+
+.qr-code p {
+    font-family: "Courier Prime", monospace;
+    color: #fff; /* Matches input text color */
+    margin-top: 10px;
+    font-size: 1em;
+    /* text-shadow: 0px 0px 4px rgba(255, 255, 255, 10.9); White shadow for better visibility */
 }
